@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+Todo Application
+This is a simple Todo application built using NestJS for the backend and React with Redux for the frontend.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prerequisites
+Ensure you have the following installed before you begin:
 
-## Available Scripts
+Node.js (v14 or higher)
+npm (v6 or higher)
+Git
+Getting Started
+1. Clone the Repository
+bash
+Copy code
+git clone <your-repo-url>
+cd todo-app
+2. Backend Setup
+Navigate to the backend directory:
 
-In the project directory, you can run:
+bash
 
-### `npm start`
+cd backend
+Install the dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+bash
+Copy code
+npm install
+Start the backend server:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+bash
+npm run start
+The backend server will run by default on http://localhost:3000.
 
-### `npm test`
+3. Frontend Setup
+Important: Ensure the backend server is running before starting the frontend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate to the frontend directory:
 
-### `npm run build`
+bash
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd ../frontend
+Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
+Start the frontend development server:
 
-### `npm run eject`
+bash
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm start
+The frontend will run by default on http://localhost:3001.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Running the Application
+Visit http://localhost:3001 in your browser to use the Todo application.
+You can register a new account, log in, and manage your todos.
+Important Note
+Backend First: Always start the backend server before starting the frontend server to ensure proper communication between the frontend and backend.
