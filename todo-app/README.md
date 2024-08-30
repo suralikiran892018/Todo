@@ -1,57 +1,78 @@
-Todo Application
-This is a simple Todo application built using NestJS for the backend and React with Redux for the frontend.
+# Todo Application
 
-Prerequisites
-Ensure you have the following installed before you begin:
+This project consists of a Todo application with a backend API and a frontend client. The backend is built with NestJS and the frontend is built with React.
 
-Node.js (v14 or higher)
-npm (v6 or higher)
-Git
-Getting Started
-1. Clone the Repository
-bash
-Copy code
-git clone <your-repo-url>
-cd todo-app
-2. Backend Setup
-Navigate to the backend directory:
+## Project Structure
 
-bash
+- **Backend:** `/backend`
+- **Frontend:** `/frontend`
 
-cd backend
-Install the dependencies:
+## Prerequisites
 
-bash
-Copy code
-npm install
-Start the backend server:
+Ensure you have the following installed on your machine:
+- Node.js
+- npm or yarn
 
-bash
-npm run start
-The backend server will run by default on http://localhost:3000.
+## Setup Instructions
 
-3. Frontend Setup
-Important: Ensure the backend server is running before starting the frontend.
+### Backend
 
-Navigate to the frontend directory:
+1. Navigate to the backend directory:
+    ```bash
+    cd backend
+    ```
 
-bash
+2. Install the backend dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-cd ../frontend
-Install the dependencies:
+3. Start the backend server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+    By default, the backend server will run on port `3000`.
 
-bash
+### Frontend
 
-npm install
-Start the frontend development server:
+1. Ensure the backend server is running before starting the frontend.
 
-bash
+2. Navigate to the frontend directory:
+    ```bash
+    cd frontend
+    ```
 
-npm start
-The frontend will run by default on http://localhost:3001.
+3. Install the frontend dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-Running the Application
-Visit http://localhost:3001 in your browser to use the Todo application.
-You can register a new account, log in, and manage your todos.
-Important Note
-Backend First: Always start the backend server before starting the frontend server to ensure proper communication between the frontend and backend.
+4. Start the frontend development server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+    The frontend server will usually run on port `3001`.
+
+## Important Notes
+
+- **Backend Server:** Make sure to start the backend server first before starting the frontend.
+- **Port Conflicts:** Ensure that no other applications are running on ports `3000` or `3001` to avoid conflicts.
+
+## Troubleshooting
+
+If you encounter issues:
+- Check that both servers are running and there are no errors in the terminal.
+- Ensure that the backend API endpoints are accessible.
+- Verify the network requests in the browser's developer tools to see if they are correctly pointing to `http://localhost:3000`.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
