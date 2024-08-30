@@ -1,85 +1,78 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Todo Application
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This project consists of a Todo application with a backend API and a frontend client. The backend is built with NestJS and the frontend is built with React.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Project Structure
 
-## Description
+- **Backend:** `/backend`
+- **Frontend:** `/frontend`
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Prerequisites
 
-## Project setup
+Ensure you have the following installed on your machine:
+- Node.js
+- npm or yarn
 
-```bash
-$ npm install
-```
+## Setup Instructions
 
-## Compile and run the project
+### Backend
 
-```bash
-# development
-$ npm run start
+1. Navigate to the backend directory:
+    ```bash
+    cd backend
+    ```
 
-# watch mode
-$ npm run start:dev
+2. Install the backend dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-# production mode
-$ npm run start:prod
-```
+3. Start the backend server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+    By default, the backend server will run on port `3000`.
 
-## Run tests
+### Frontend
 
-```bash
-# unit tests
-$ npm run test
+1. Ensure the backend server is running before starting the frontend.
 
-# e2e tests
-$ npm run test:e2e
+2. Navigate to the frontend directory:
+    ```bash
+    cd frontend
+    ```
 
-# test coverage
-$ npm run test:cov
-```
+3. Install the frontend dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-## Resources
+4. Start the frontend development server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+    The frontend server will usually run on port `3001`.
 
-Check out a few resources that may come in handy when working with NestJS:
+## Important Notes
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+- **Backend Server:** Make sure to start the backend server first before starting the frontend.
+- **Port Conflicts:** Ensure that no other applications are running on ports `3000` or `3001` to avoid conflicts.
 
-## Support
+## Troubleshooting
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+If you encounter issues:
+- Check that both servers are running and there are no errors in the terminal.
+- Ensure that the backend API endpoints are accessible.
+- Verify the network requests in the browser's developer tools to see if they are correctly pointing to `http://localhost:3000`.
 
 ## License
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
